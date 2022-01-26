@@ -17,7 +17,7 @@ public class DemoApplication {
     
     @RequestMapping("/private")
 	public String secure() {
-		return "message", "Esta é uma mesangem privada!";
+		return "Esta é uma mesangem privada!";
 	}
 
     public static void main(String[] args) {
