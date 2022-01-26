@@ -12,12 +12,12 @@ public class DemoApplication {
 
     @RequestMapping("/")
     String home() {
-        return "Hello World!";
+        return "Boa tarde GSDS! <br /><p>Click <a href="/private">aqui</a> para ir para página segura</p>  ";
     }
     
     @RequestMapping("/private")
 	public String secure() {
-		return "Esta é uma mesangem privada!";
+		return "Esta he uma página apos validacao SSO.";
 	}
 
     public static void main(String[] args) {
