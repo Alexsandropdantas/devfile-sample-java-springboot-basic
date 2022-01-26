@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @SpringBootApplication
-public class DemoApplication {
+public class DemoApplication implements ErrorController{
 
     @RequestMapping("/")
     String home() {
@@ -19,6 +19,11 @@ public class DemoApplication {
 	public String secure() {
 		return "Esta he uma página apos validacao SSO.";
 	}
+	
+    @Override
+    public String getErrorPath() {
+        return "Página de erro do Controlador";
+    }
 
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
