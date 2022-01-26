@@ -12,7 +12,7 @@ public class DemoApplication {
 
     @RequestMapping("/")
     String home() {
-        return "Boa tarde GSDS! <br /><p>Click <a href="/private">aqui</a> para ir para página segura</p>  ";
+        return "Boa tarde GSDS! <br /><p>Click <a href=\"/private\">aqui</a> para ir para página segura</p>  ";
     }
     
     @RequestMapping("/private")
