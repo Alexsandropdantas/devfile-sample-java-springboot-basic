@@ -13,12 +13,12 @@ public class DemoApplication implements ErrorController{
 
     @RequestMapping("/")
     String home() {
-        return "<h1>Boa tarde GSDS! </h1><br /><p>Click <a href=\"/private\">aqui</a> para ir para página segura</p>  ";
+        return "<h1>Teste RH Single Sign On! </h1><br /><p>Click <a href=\"/private\">aqui</a> logar com SSO.</p>  ";
     }
     
     @RequestMapping("/private")
 	public String secure() {
-		return "Esta he uma página apos validacao SSO.";
+		return "<h1>Logado no SSO com sucesso!</h1>";
 	}
 	
     @Override
