@@ -21,7 +21,6 @@ public class DemoApplication implements ErrorController{
 		return "<h1>Logado no SSO com sucesso!</h1>";
 	}
 	
-    @Override
     public String getErrorPath() {
         return "Página de erro do Controlador";
     }
